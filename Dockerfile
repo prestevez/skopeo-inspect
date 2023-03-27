@@ -4,8 +4,6 @@ RUN apk add skopeo
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN ls -lah / && cat /entrypoint.sh
-
-RUN skopeo inspect docker://alpine
+RUN /entrypoint.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
