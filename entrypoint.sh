@@ -1,4 +1,4 @@
-#!/bin/sh -lec
+#!/bin/sh -le
 
 tmp="$(skopeo inspect $INPUT_TARGET_IMAGE)"
 
