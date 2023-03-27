@@ -10,11 +10,10 @@ jobs:
     name: Testing whether skopeo action works
     steps:
       - name: Inspect alpine image
-        id: inspection
+        id: inspect-alpine
         uses: prestevez/skopeo-inspect@main
         with:
           target_image: docker://alpine
-      - name: Test skopeo inspect action
+      - name: Examine outputs
         run: |
-          echo "Inspected image: ${{ steps.inspection.inputs.target_image }}"
-          echo "Inspection: ${{ steps.inspection.outputs.INSPECTION }}"
+          echo "Inspection: ${{ steps.inspect-alpine.outputs.inspection }}"
