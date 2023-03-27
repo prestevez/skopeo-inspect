@@ -1,5 +1,6 @@
-FROM quay.io/skopeo/stable:latest
-LABEL maintainer="Patricio R Estevez-Soto <patricio.estevez@ucl.ac.uk>"
+FROM alpine:3
+
+RUN apk add skopeo
 
 COPY entrypoint.sh /entrypoint.sh
 
