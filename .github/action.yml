@@ -1,6 +1,11 @@
 # action.yml
 name: 'skopeo inspect'
 description: 'Inspect a container image using skopeo'
+author: 'Patricio R Estévez-Soto'
+branding:
+  icon: "search"
+  color: "red"
+
 inputs:
   target_image:  # id of input
     description: 'Image that will be inspected'
