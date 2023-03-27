@@ -1,0 +1,16 @@
+# action.yml
+name: 'skopeo inspect'
+description: 'Inspect a container image using skopeo'
+inputs:
+  target-image:  # id of input
+    description: 'Image that will be inspected'
+    required: true
+    default: 'alpine'
+outputs:
+  inspection: # id of output
+    description: 'Container metadata returned by skopeo-inspect'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.target-image }}
