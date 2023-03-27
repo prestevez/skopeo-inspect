@@ -17,7 +17,7 @@ The output of [`skopeo inspect`](https://github.com/containers/skopeo/blob/main/
 ## Example usage
 
 ```
-uses: prestevez/skopeo-inspect@beta
+uses: prestevez/skopeo-inspect@main
 with:
-  who-to-greet: rocker/r-ver:latest
+  target-image: docker://rocker/r-ver:latest
 ```

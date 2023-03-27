@@ -4,6 +4,4 @@ RUN apk add skopeo
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN /entrypoint.sh
-
 ENTRYPOINT [ "/entrypoint.sh" ]
