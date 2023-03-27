@@ -16,5 +16,6 @@ jobs:
           target_image: docker://alpine
       - name: Test skopeo inspect action
         run: |
+          env
           echo "${{ steps.inspection.outputs.inspection }}"
           echo "${{ steps.inspection.inputs.target_image }}"
