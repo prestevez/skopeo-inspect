@@ -5,7 +5,7 @@ inputs:
   target-image:  # id of input
     description: 'Image that will be inspected'
     required: true
-    default: 'alpine'
+    default: 'docker://alpine'
 outputs:
   inspection: # id of output
     description: 'Container metadata returned by skopeo-inspect'

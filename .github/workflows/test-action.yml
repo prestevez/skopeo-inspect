@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing whether skopeo action works
     steps:
-      - name: Inspect parent image
+      - name: Inspect default image
         id: inspection
         uses: prestevez/skopeo-inspect@main
       - name: Test skopeo inspect action
