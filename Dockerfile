@@ -1,7 +1,7 @@
 FROM alpine:3
 
 RUN apk add skopeo && \
-    which skopeo
+    skopeo --help 
 
 COPY entrypoint.sh /entrypoint.sh
 
