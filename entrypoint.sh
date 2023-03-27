@@ -9,4 +9,4 @@ echo "JSON_RESPONSE<<$EOF" >> $GITHUB_OUTPUT
 echo "inspection=$tmp" >> $GITHUB_OUTPUT
 echo "$EOF" >> $GITHUB_OUTPUT
 
-echo $GITHUB_OUTPUT
+ls -lah $GITHUB_OUTPUT
