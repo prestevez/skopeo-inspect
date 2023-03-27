@@ -2,7 +2,7 @@
 name: 'skopeo inspect'
 description: 'Inspect a container image using skopeo'
 inputs:
-  target-image:  # id of input
+  target_image:  # id of input
     description: 'Image that will be inspected'
     required: true
 outputs:
@@ -12,4 +12,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.target-image }}
+    - ${{ inputs.target_image }}

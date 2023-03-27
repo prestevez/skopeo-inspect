@@ -1,6 +1,5 @@
 #!/bin/sh -lve
 
-env
-skopeo inspect $1
+skopeo inspect $INPUT_TARGET_IMAGE
 #echo $tmp
 #echo "inspection=$tmp" >> $GITHUB_OUTPUT
