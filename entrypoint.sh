@@ -1,5 +1,6 @@
-#!/bin/sh -lv
+#!/bin/sh -lve
 
+env
 skopeo inspect $1
 #echo $tmp
 #echo "inspection=$tmp" >> $GITHUB_OUTPUT
