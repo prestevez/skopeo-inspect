@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing whether skopeo action works
     steps:
-      - name: Inspect default image
+      - name: Inspect alpine image
         id: inspection
         uses: prestevez/skopeo-inspect@main
         with:
