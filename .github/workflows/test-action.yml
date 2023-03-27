@@ -12,5 +12,9 @@ jobs:
       - name: Inspect default image
         id: inspection
         uses: prestevez/skopeo-inspect@main
+        with:
+          target-image: docker://alpine
       - name: Test skopeo inspect action
-        run: echo ${{ steps.inspection.outputs.inspection }}
+        run: |
+          echo ${{ steps.inspection.outputs.inspection }}
+          echo ${{ steps.inspection.inputs.target-image }}
