@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Inspect parent image
         id: inspection
-        uses: prestevez/skopeo-inspect@beta.0.4
+        uses: prestevez/skopeo-inspect@main
       - name: Test skopeo inspect action
         run: echo ${{ steps.inspection.outputs.inspection }}
