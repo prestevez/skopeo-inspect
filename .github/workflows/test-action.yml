@@ -16,5 +16,4 @@ jobs:
           target_image: docker://alpine
       - name: Examine outputs
         run: |
-          echo "Inspection: ${{ steps.inspect-alpine.outputs.* }}"
           echo "Inspection: ${{ steps.inspect-alpine.outputs.inspection }}"
